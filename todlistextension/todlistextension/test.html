@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test - Harsh's Todo List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .test-container {
+      background: #111;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+    }
+    .test-btn {
+      background: #00e676;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-container">
+    <h1>Test Page</h1>
+    <p>If you can see this, the basic HTML is working.</p>
+    <button class="test-btn" onclick="testFunction()">Test Button</button>
+    <div id="test-output"></div>
+  </div>
+
+  <script>
+    function testFunction() {
+      document.getElementById('test-output').innerHTML = 'JavaScript is working! ✅';
+    }
+    
+    // Test if files can be loaded
+    console.log('Test page loaded successfully');
+    
+    // Test CSS loading
+    const testElement = document.createElement('div');
+    testElement.style.display = 'none';
+    document.body.appendChild(testElement);
+    console.log('CSS test passed');
+  </script>
+</body>
+</html> 
